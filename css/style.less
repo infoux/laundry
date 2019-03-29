@@ -628,15 +628,29 @@ body {
                     select,
                     input {
                         .inline-block;
+                        .relative;
                         .top;
                         .rem(font-size, 14);
                         .rem(border-radius, 6);
                         .rem(padding, 0 10);
                         .rem(margin, 0 0 5);
                         width:100%;
+                        .rem(line-height, 30);
                         .rem(height, 30);
                         background:#BFC8D1;
                         border:none;
+                    }
+
+                    input {
+                        
+                        appearance: none;
+                        -moz-appearance: none;
+                        -ms-appearance: none;
+                        -webkit-appearance: none;
+                
+                        &::-ms-expand {
+                            display: none;
+                        }
                     }
 
                     button {
