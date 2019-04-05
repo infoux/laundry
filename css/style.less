@@ -855,6 +855,10 @@ body {
                             .zero;
                             line-height:1;
 
+                            &:last-child {
+                                border:none;
+                            }
+
 
 
                                 h3 {
@@ -903,6 +907,14 @@ body {
 
 
                         }
+                    }
+
+                    textarea.comment {
+                        width:100%;
+                        .rem(min-height, 120);
+                        .rem(padding, 10);
+                        border:none;
+                        background:#efefef;
                     }
 
                     div.btn-set {
