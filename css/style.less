@@ -562,7 +562,8 @@ body {
                             .none;
                         }
 
-                        input,
+                        input[type="text"],
+                        input[type="password"],
                         button {
                             .block;
                             width:100%;
@@ -578,12 +579,32 @@ body {
                             }
                         }
 
-                        input {
+                        
+                        input[type="text"],
+                        input[type="password"] {
                             .rem(margin-bottom, 6);
                             .drop-shadow();
         
                             @media all and (min-width: 1200px) {
                                 margin-bottom:10px;
+                            }
+                        }
+                        
+                        span.saveID {
+                            .block;
+                            color:#fff;
+                            .rem(margin, 10 0 20);
+
+                            input {
+                                .rem(width, 16);
+                                .rem(height, 16);
+                                .rem(margin-right, 4);
+                                .top;
+                            }
+
+                            label {
+                                .inline-block;
+                                .rem(font-size, 14);
                             }
                         }
 
